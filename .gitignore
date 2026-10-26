@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local datasets and medical imaging files
+data/
+datasets/
+*.mha
+*.nii
+*.nii.gz
+*.dcm
+
+# NumPy data and generated model artifacts
+*.npz
+*.npy
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
