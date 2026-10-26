@@ -79,6 +79,23 @@ The overall experimental workflow consists of:
 6. **Experimental comparison:** Analyze differences between baseline, attention-based, and ensemble approaches.
 <img width="1223" height="779" alt="Screenshot 2026-04-12 202940" src="https://github.com/user-attachments/assets/31fe2ac0-d34b-4535-a918-f8c8b659b166" />
 
+## MRI Data Extraction and Preprocessing
+
+A structured preprocessing pipeline was developed to transform lumbar spine MRI volumes into standardized, disc-level 3D inputs for downstream multi-task classification.
+
+The pipeline consists of the following stages:
+
+1. **Volume loading:** Load MRI volumes in `.mha` format and retrieve voxel-spacing metadata.
+2. **Foreground intensity clipping:** Apply percentile-based clipping to reduce the influence of extreme intensity values.
+3. **Isotropic resampling:** Resample the volumes to a consistent spatial resolution.
+4. **Intervertebral disc extraction:** Localize disc regions using segmentation masks and extract anatomically consistent 3D crops.
+5. **Per-disc intensity normalization:** Normalize intensity values using percentile-based statistics.
+6. **Fixed-size resizing:** Resize the extracted patches to a standardized 3D input shape for model training.
+<img width="412" height="346" alt="Screenshot 2026-10-26 165235" src="https://github.com/user-attachments/assets/a74d6797-a0f4-48b2-a4f7-63ba0d265787" />
+
+The extraction implementation is intentionally not included in this public repository. This section documents the methodology at a high level while keeping the implementation separate.
+
+**Reproducibility note:** The extraction pipeline and the availability of the original MRI data determine whether the complete preprocessing workflow can be reproduced. The dataset and any restricted materials are not distributed with this repository.
 
 ## Phase I: Baseline Models
 
