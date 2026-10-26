@@ -173,8 +173,8 @@ lumbar-spine-3d-multitask-learning/
 ├── README.md
 └── notebooks/
     ├── README.md
-    ├── phase_1_baseline_models.ipynb
-    └── phase_2_advanced_models.ipynb
+    ├── PHASE I.ipynb
+    └── PHASE II.ipynb
 ```
 
 The notebooks document the initial research experiments. Additional modular source code, configuration files, dependency specifications, and reproducible execution instructions can be added as the repository is prepared for reuse.
