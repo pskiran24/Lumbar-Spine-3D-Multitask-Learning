@@ -91,7 +91,8 @@ The pipeline consists of the following stages:
 4. **Intervertebral disc extraction:** Localize disc regions using segmentation masks and extract anatomically consistent 3D crops.
 5. **Per-disc intensity normalization:** Normalize intensity values using percentile-based statistics.
 6. **Fixed-size resizing:** Resize the extracted patches to a standardized 3D input shape for model training.
-<img width="412" height="346" alt="Screenshot 2026-10-26 165235" src="https://github.com/user-attachments/assets/a74d6797-a0f4-48b2-a4f7-63ba0d265787" />
+<img width="401" height="307" alt="image" src="https://github.com/user-attachments/assets/71593207-75d7-412a-8f8e-bf923cfe9ee9" />
+
 
 The extraction implementation is intentionally not included in this public repository. This section documents the methodology at a high level while keeping the implementation separate.
 
