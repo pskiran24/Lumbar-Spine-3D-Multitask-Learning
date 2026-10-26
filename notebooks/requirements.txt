@@ -1,0 +1,20 @@
+# Core numerical and data processing
+numpy
+pandas
+scipy
+scikit-learn
+
+# Medical image processing
+SimpleITK
+MedPy
+
+# Deep learning
+torch
+torchvision
+tqdm
+matplotlib
+seaborn
+
+# Notebook support
+jupyter
+ipykernel
